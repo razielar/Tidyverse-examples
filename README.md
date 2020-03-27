@@ -1,1 +1,22 @@
-# Dplyr-examples
+# Some tidyverse examples:
+
+## 1) Arrange examples:
+
+## 2) Group_by examples:
+
+## 3) Mutate examples:
+
+Mutate examples can be used in select
+
+### 3.1) Mutate_at/select_at using regular expressions:
+
+**Description:** we can use regular expressions ([cheat sheet of regular expression for R](https://rstudio.com/wp-content/uploads/2016/09/RegExCheatsheet.pdf)) for select_at/mutate_at using *matches* 
+
+```{r}
+
+df %>% mutate_at(vars(matches("Control|Regeneration")),
+                                            ~replace(., . < 1, 0))
+
+```
+
+**Script**: *mutate.select.reg.expr.R*
