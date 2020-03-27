@@ -12,7 +12,7 @@ Mutate examples can be used in select
 
 **Script**: *mutate.select.reg.expr.R*
 
-**Description:** we can use regular expressions ([cheat sheet of regular expression for R](https://rstudio.com/wp-content/uploads/2016/09/RegExCheatsheet.pdf)) for select_at/mutate_at using *matches*. See the script above for more details. This reg expression:*|* means *or*. 
+**Description:** we can use regular expressions ([cheat sheet of regular expression for R](https://rstudio.com/wp-content/uploads/2016/09/RegExCheatsheet.pdf)) for *select_at* or *mutate_at* using the function: **matches**. See the script above for more details and see how to use *matches* and *replace* functions using a condition. This reg expression: | means: *or*. 
 
 ```{r}
 
