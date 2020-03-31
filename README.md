@@ -24,3 +24,16 @@ df %>%
   select_at(vars(matches("FoldChange_(0|15|25)h_group$")))          
 
 ```
+
+### 3.2) Mutate_at/select_at: using *replace* and *ifelse* statements:
+
+**Script**: *mutate.multiple.ifelse.R*
+
+**Description:** If you want to use multiple ifelse statements see the script above. 
+
+```{r}
+
+df %>%
+  mutate(new_status=ifelse(status == "Closed" | status == "Running", "Amount commitment only", "Amount with hypothesis" ))
+
+```
