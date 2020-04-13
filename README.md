@@ -1,10 +1,15 @@
 # Some tidyverse examples:
 
-## 1) Arrange examples:
+1. [Arrange examples](#arrange)
+2. [Group_by examples](#group)
+3. [Mutate examples](#mutate)
+4. [Count examples](#count)
 
-## 2) Group_by examples:
+## 1)  <a id='arrange'></a> Arrange examples:
 
-## 3) Mutate examples:
+## 2) <a id='group'></a> Group_by examples:
+
+## 3) <a id='mutate'></a> Mutate examples:
 
 *mutate* examples can also be used in *select*
 
@@ -52,7 +57,7 @@ df %>%
 
 ```
 
-## 4) Count examples:
+## 4) <a id='count'></a> Count examples:
 
 **Script**: *count.example.R*
 
