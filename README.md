@@ -51,3 +51,24 @@ df %>%
     ~replace_na(., replace = 0) )
 
 ```
+
+## 4) Count examples:
+
+**Script**: *count.example.R*
+
+**Description:** *count* function is the same as group_by and summarise(F=n())
+
+```{r}
+#group_by and summarise:
+
+df %>%
+  group_by(Gene_ID) %>%
+  summarise(num_transcripts=n()) %>%
+  group_by(num_transcripts) %>% summarise(F=n())
+
+#count:
+
+df %>% count(Gene_ID, name="num_transcripts") %>% count(num_transcripts)
+
+
+```
