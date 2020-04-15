@@ -60,13 +60,12 @@ df %>%
 
 ## 4) <a id='select'></a> Select examples:
 
-
+**Script**: *select.at.matches.inverse.R*
 
 ```{r}
 
 df %>%
-  mutate_at(vars(matches("FoldChange_(0|15|25)h$")),
-    ~replace_na(., replace = 0) )
+  select_at(vars(-c(matches("(CRG|_\\d+h$)"))))
 
 ```
 
