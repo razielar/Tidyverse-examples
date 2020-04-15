@@ -3,7 +3,8 @@
 1. [Arrange examples](#arrange)
 2. [Group_by examples](#group)
 3. [Mutate examples](#mutate)
-4. [Count examples](#count)
+4. [Select examples](#select)
+5. [Count examples](#count)
 
 ## 1)  <a id='arrange'></a> Arrange examples:
 
@@ -57,7 +58,19 @@ df %>%
 
 ```
 
-## 4) <a id='count'></a> Count examples:
+## 4) <a id='select'></a> Select examples:
+
+
+
+```{r}
+
+df %>%
+  mutate_at(vars(matches("FoldChange_(0|15|25)h$")),
+    ~replace_na(., replace = 0) )
+
+```
+
+## 5) <a id='count'></a> Count examples:
 
 **Script**: *count.example.R*
 
