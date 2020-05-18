@@ -5,6 +5,7 @@
 3. [Mutate examples](#mutate)
 4. [Select examples](#select)
 5. [Count examples](#count)
+6. [Gather and Spread](#gather)
 
 ## 1)  <a id='arrange'></a> Arrange examples:
 
@@ -89,3 +90,6 @@ df %>% count(Gene_ID, name="num_transcripts") %>% count(num_transcripts)
 
 
 ```
+## 6) <a id='gather'></a> Gather and spread example:
+
+[Here](https://data.library.virginia.edu/a-tidyr-tutorial/) you have several good examples for gather and spread or you can see the script `gather_spread/gather.spread.example.R`
