@@ -58,6 +58,23 @@ df %>%
     ~replace_na(., replace = 0) )
 
 ```
+### 3.3) Mutate: using str_detect and row_number():
+
+**Script**: *mutate.str_detect.ifelse.row_numer.R*
+
+**Description:** use inside mutate: ifelse, str_detect and row_number(). *str_detect* works as: str_detect(string or in this case column name, pattern).
+
+```{r}
+
+data %>% as_tibble %>%
+    mutate(Biological_Sample=ifelse(str_detect(Dev_Time, "Adult"),
+                                    paste("Adult", Biological_Sample, sep="_"),
+                                    Biological_Sample)) %>%
+    group_by(Biological_Sample) %>%
+    mutate(Sample_Name= paste(Sample_Name, row_number(), sep="-")) %>% ungroup
+
+
+```
 
 ## 4) <a id='select'></a> Select examples:
 
