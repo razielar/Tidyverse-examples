@@ -58,7 +58,7 @@ df %>%
     ~replace_na(., replace = 0) )
 
 ```
-### 3.3) Mutate: using str_detect and row_number():
+### 3.4) Mutate: using str_detect and row_number():
 
 **Script**: *mutate.str_detect.ifelse.row_numer.R*
 
@@ -66,8 +66,8 @@ df %>%
 
 ```{r}
 
-data %>% as_tibble %>%
-    mutate(Biological_Sample=ifelse(str_detect(Dev_Time, "Adult"),
+data %>%
+  mutate(Biological_Sample=ifelse(str_detect(Dev_Time, "Adult"),
                                     paste("Adult", Biological_Sample, sep="_"),
                                     Biological_Sample)) %>%
     group_by(Biological_Sample) %>%
