@@ -50,7 +50,7 @@ metadata <- data %>% as_tibble %>%
 ### For example only: the correct one is above: 
 
 metadata <- data %>% as_tibble %>%
-    mutate(Biological_Sample=ifelse(str_detect(Dev_Time, "Adult"),
+    mutate(Biological_Sample=ifelse(str_detect(Dev_Time, "Adult"), 
                                     paste("Adult", Biological_Sample, sep="_"),
                                     Biological_Sample)) %>% 
     group_by(Biological_Sample) %>%
