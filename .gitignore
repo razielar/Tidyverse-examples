@@ -2,4 +2,7 @@
 
 *~ 
 *.csv
+*.feather
+*.rds
+*.RData
 
