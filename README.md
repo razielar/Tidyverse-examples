@@ -6,6 +6,7 @@
 4. [Select examples](#select)
 5. [Count examples](#count)
 6. [Gather and Spread](#gather)
+7. [Benchmarks](#bench)
 
 ## 1)  <a id='arrange'></a> Arrange examples:
 
@@ -110,3 +111,11 @@ df %>% count(Gene_ID, name="num_transcripts") %>% count(num_transcripts)
 ## 6) <a id='gather'></a> Gather and spread example:
 
 [Here](https://data.library.virginia.edu/a-tidyr-tutorial/) you have several good examples for gather and spread or you can see the script `gather_spread/gather.spread.example.R`
+
+## 7) <a id='bench'></a> Benchmarks:
+
+### 7.1) Benchmarks reading files in R:
+
+**Script**: *benchmark.reading.comparison.R*
+
+**Description:**  The method is feather but it's not the best compressing the file size.
