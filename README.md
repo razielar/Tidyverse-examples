@@ -119,3 +119,7 @@ df %>% count(Gene_ID, name="num_transcripts") %>% count(num_transcripts)
 **Script**: *benchmark.reading.comparison.R*
 
 **Description:**  The method is feather but it's not the best compressing the file size.
+
+<div align="center">
+<img src="https://raw.githubusercontent.com/razielar/Dplyr-examples/master/img/benchmark.reading.png" alt="logo"></img>
+</div>
