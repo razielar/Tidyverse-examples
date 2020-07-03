@@ -7,6 +7,7 @@
 5. [Count examples](#count)
 6. [Gather and Spread](#gather)
 7. [Benchmarks](#bench)
+8. [Fill](#fill)
 
 ## 1)  <a id='arrange'></a> Arrange examples:
 
@@ -123,3 +124,5 @@ df %>% count(Gene_ID, name="num_transcripts") %>% count(num_transcripts)
 <div align="center">
 <img src="https://raw.githubusercontent.com/razielar/Dplyr-examples/master/img/benchmark.reading.png" alt="logo"></img>
 </div>
+
+## 8) <a id='fill'></a> Fill:
