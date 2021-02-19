@@ -8,6 +8,7 @@
 6. [Gather and Spread](#gather)
 7. [Benchmarks](#bench)
 8. [Fill](#fill)
+9. [case_when](#case)
 
 ## 1)  <a id='arrange'></a> Arrange examples:
 
@@ -126,3 +127,12 @@ df %>% count(Gene_ID, name="num_transcripts") %>% count(num_transcripts)
 </div>
 
 ## 8) <a id='fill'></a> Fill:
+
+## 9) <a id='case'></a> case_when: 
+
+[Stack overflow entry](https://stackoverflow.com/questions/47624161/use-filter-in-dplyr-conditional-on-an-if-statement-in-r)  
+
+**Description**: you can use it as a if statment inside filter  
+
+**Script**: *case.when.R*  
+
