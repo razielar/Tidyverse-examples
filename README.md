@@ -79,6 +79,21 @@ data %>%
 
 ```
 
+### 3.5) Mutate_if: if is numeric apply a function
+
+**Script**: *mutate.if.R*
+
+**Description:** you have a df and you want to apply an operation such as *log*, etc. And then round the numbers, you can do the following: 
+
+```{r}
+
+df %>%
+  mutate_if(is.numeric, ~round(log(.), 4))
+
+```
+
+
+
 ## 4) <a id='select'></a> Select examples:
 
 **Script**: *select.at.matches.inverse.R*
