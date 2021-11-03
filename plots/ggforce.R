@@ -20,9 +20,15 @@ ggplot(df, aes(x, y)) +
                      space = "free")
 
 # Zoom in to a region of the plot
-ggplot2::ggplot(iris,
+p <- ggplot2::ggplot(iris,
                 ggplot2::aes(x = Petal.Length,
                     y = Petal.Width,
                     colour = Species)) +
   ggplot2::geom_point() +
   ggforce::facet_zoom(x = Species == "versicolor")
+
+## ggsave(p, file= "example.ggforce.pdf",
+##        width = 6, height = 5)
+
+
+
